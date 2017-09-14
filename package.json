@@ -1,0 +1,26 @@
+{
+  "name": "personalsprint",
+  "version": "1.0.0",
+  "description": "project for developing my own skills",
+  "main": "main.js",
+  "dependencies": {
+    "grunt-cli": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LDSpits/personalsprint-1.git"
+  },
+  "keywords": [
+    "personalsprint"
+  ],
+  "author": "Lucas Spits",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LDSpits/personalsprint-1/issues"
+  },
+  "homepage": "https://github.com/LDSpits/personalsprint-1#readme"
+}
