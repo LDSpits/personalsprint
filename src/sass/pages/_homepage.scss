@@ -1,0 +1,44 @@
+.headline {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    color: $grey;
+
+    &__search{
+        margin-bottom: 10%;
+        border: 2px solid $white;
+        background: $headline-black;
+        width: 14%;
+        font-size: 1.3em;
+    }
+
+    &__header{
+        padding-left: 8%;
+        padding-top: 10%;
+        width: 85%;
+        font-style: bold;
+        background: $headline-black;
+        
+    }
+
+    &__navigation{
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: $navigation;
+        align-items: center;
+        height: 75%;
+        margin-top: 10%;
+        transform: translateX(-50%);
+    }
+}
+
+.navigation__link{
+    font-style: none;
+    text-decoration: none;
+    color: $grey;
+    height: 10%;
+    font-size: 1.2em;
+}

@@ -2,7 +2,7 @@ default:
   - 'build'
 
 build:
-  - 'newer:copy'
-  - 'newer:sass'
-  - 'newer:cssmin'
-  - 'newer:uglify'
+  - 'copy'
+  - 'sass'
+  - 'cssmin'
+  - 'uglify'
