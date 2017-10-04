@@ -1,0 +1,15 @@
+@mixin flow($direction) {
+    display: flex;
+    margin-bottom: 2vw;
+    justify-content: space-between;
+
+    @if($direction == left){
+        flex-direction: row;
+        
+        
+
+    }@else{
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+}

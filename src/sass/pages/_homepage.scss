@@ -1,5 +1,5 @@
 .headline {
-    width: 100vw;
+    width: 100%;
     height: 70vh;
     display: flex;
     flex-direction: row;
@@ -32,13 +32,118 @@
         height: 75%;
         margin-top: 10%;
         transform: translateX(-50%);
+
+        .navigation__link{
+            font-style: none;
+            text-decoration: none;
+            color: $grey;
+            height: 10%;
+            font-size: 1.2em;
+        }
     }
 }
 
-.navigation__link{
-    font-style: none;
-    text-decoration: none;
-    color: $grey;
-    height: 10%;
-    font-size: 1.2em;
+.introduction{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    &__headline{
+        text-align: center;
+        justify-content: center;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    &__features{
+        list-style: none;
+        margin: 0 5vw;
+        padding: 0;
+    }
+
+    &__feature--left{
+        @include flow(left);
+    }
+
+    &__feature--right{
+        @include flow(right);
+    }
+
+    .feature{
+
+        &__description{
+            width: 45%;
+        }
+
+        &__image{
+            width: 45%;
+        }
+    }
+}
+
+.contact{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    &__headline{
+        text-align: center;
+        justify-content: center;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    &__form{
+        flex-direction: column;
+        align-items: center;
+        display: inherit;
+    }
+
+}
+
+.form{
+    border: none;
+
+    &__text{
+        width: 80%;
+        background-color:$grey;
+        margin: 1vh 0;
+        border: inherit;
+        font-size: 1.5em;
+        padding: 0.2em;
+    }
+
+    &__largetext{
+        width: 80%;
+        background-color:$grey;
+        border: inherit;
+        margin: 1vh 0;
+        min-height: 25vh;
+    }
+
+    &__submit{
+        border: inherit;
+        font-size: 1.3em;
+        color: $white;
+        background-color: $headline-black;
+        padding: 1.5vh 3vw;
+        align-self: right;
+        margin-right: 10%;
+        margin-bottom: 1vh;
+    }
+}
+
+.footer{
+    background-color: $headline-black;
+
+    &__copyright{
+        margin: 0;
+        padding: 1vh;
+        color: $white;
+    }
+
 }
