@@ -1,8 +1,0 @@
-default:
-  - 'build'
-
-build:
-  - 'copy'
-  - 'sass'
-  - 'cssmin'
-  - 'uglify'
