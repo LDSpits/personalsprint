@@ -6,7 +6,6 @@ let cleanCSS = require('gulp-clean-css');
 let sourcemaps = require('gulp-sourcemaps')
 let babel = require('gulp-babel');
 let uglify = require('gulp-uglify');
-let tap = require('gulp-tap');
 
 //process and minify sass to css with sourcemaps
 gulp.task('styles', function() {
@@ -18,7 +17,7 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('./release/css'));
 });
 
-//process js files with sourcemaps and vscode debug support 
+//process js files and create sourcemaps for vscode debug support
 gulp.task('scripts', function() {
     return gulp.src('./src/js/**/*.js')
     .pipe(sourcemaps.init())
@@ -35,6 +34,6 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('watch', function(){
-    gulp.watch('./src/**/**.js', ['scripts']); 
-    gulp.watch('./src/**/**.scss', ['styles']); 
+    gulp.watch('./src/**/*.js', ['scripts']); 
+    gulp.watch('./src/**/*.scss', ['styles']); 
 })
